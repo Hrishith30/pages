@@ -24,10 +24,9 @@ body {
     height: 400px;
     margin: 0 auto;
     margin-top: 160px;
-    color: rgb(0, 0, 0);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
-    margin-right: 400px;
+    margin-right: 350px;
 }
   
   .auth-card-wrapper {
@@ -64,7 +63,7 @@ body {
     border-radius: 10px;
     padding: 20px;
     box-sizing: border-box;
-    background-color: ghostwhite;
+    background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   }
   
@@ -231,4 +230,79 @@ body {
   .strength-section.filled:nth-child(4) { background-color: #8BC34A; }
   .strength-section.filled:nth-child(5) { background-color: #4CAF50; }
   
+  .typewriter-container {
+    position: fixed;
+    left: 300px;
+    top: 40%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+  }
   
+  .typewriter {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+  }
+  
+  @keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  .blinking-cursor {
+    animation: blink 1s infinite;
+    display: inline-block;
+    width: 2px;
+    height: 1.4em;
+    background-color: #ffffff;
+    vertical-align: text-top;
+    margin-left: 2px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .auth-container {
+      width: 90%;
+      height: auto;
+      margin: 20px auto;
+      margin-right: auto;
+    }
+  
+    .typewriter-container {
+      position: static;
+      transform: none;
+      margin-bottom: 20px;
+    }
+  
+    .typewriter {
+      font-size: 18px;
+      white-space: normal;
+      text-align: center;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    input, button {
+      font-size: 16px;
+    }
+  
+    .forgot-password {
+      text-align: center;
+    }
+  
+    .password-toggle {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
