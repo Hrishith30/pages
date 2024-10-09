@@ -24,7 +24,8 @@ body {
     height: 400px;
     margin: 0 auto;
     margin-top: 160px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    color: rgb(0, 0, 0);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
     border-radius: 10px;
     margin-right: 400px;
 }
@@ -63,7 +64,7 @@ body {
     border-radius: 10px;
     padding: 20px;
     box-sizing: border-box;
-    background-color: #ffffff;
+    background-color: ghostwhite;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   }
   
